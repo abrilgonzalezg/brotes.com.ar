@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotes</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/fuente/LEAFLETS.otf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo_brotes.png" alt="">
+            </div>
+
+            <div class="links">
+                <ul id="menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> <br/> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-users"></i> <br/> Nosotros</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> <br/> Contacto</a></li>
+                </ul>
+
+                <ul id="menu-mobile">
+                    <li><button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="banner-principal">
+                <a href="contacto.html">¡Escribinos!</a>
+            </div>
+        </section>  
+
+        <section>
+
+            <div class="container-cuadros">
+                <div class="item-cuadros bg1">
+                    <div class="notas">
+                        <h2>Quienes somos</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda recusandae alias quos delectus libero? Libero fugiat explicabo quisquam. Officia assumenda illum error, numquam nulla consequuntur dignissimos, incidunt, fugit ratione amet doloremque laboriosam eveniet vero quibusdam sequi nesciunt. Eos qui inventore molestias voluptatum fugiat. Ipsam enim neque, quidem atque blanditiis voluptate.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="item-cuadros bg2"> 
+                    <div class="notas">
+                        <h2>Nuestros productos</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem ipsam provident, possimus eveniet laboriosam, quibusdam illo nisi consequuntur soluta ut eum repellendus enim magni tempora numquam dolorum culpa commodi esse nam in deserunt beatae veritatis qui. Maxime dignissimos atque quaerat hic asperiores sed molestias recusandae cumque repellendus sit. Fugiat.</p>
+                    </div> 
+                             
+                </div>
+
+                <div class="item-cuadros bg3">  
+                    <div class="notas">
+                        <h2>Donde encontrarnos</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.982118833809!2d-58.39448278517652!3d-34.60461366505164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb00112384e3%3A0xd964cbbbbbfe3d1c!2sCorrientes%20y%20Callao!5e0!3m2!1ses-419!2sar!4v1635691476864!5m2!1ses-419!2sar" width="50%" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo a consequatur inventore eaque? Nulla?</p>
+                        
+                        
+                    </div>
+                    
+                    
+                     
+                </div>
+            </div>
+        </section>
+
+        <section> 
+            <div class="container-compra">
+                <div class="item-compra">
+                    <i class="far fa-credit-card"></i>
+                    <h2>Paga como quieras</h2>
+                </div>
+                <div class="item-compra">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h2>Envíos a todo el país</h2>
+                </div>
+                <div class="item-compra">
+                    <i class="fas fa-lock"></i>
+                    <h2>Compra con seguridad</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <h2>Nuestras redes</h2>
+        <div class="footer-container">
+            
+            <div class="item-footer">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="item-footer">
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="item-footer">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            
+        </div>
+    </footer>
+    
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotes</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>   
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo_brotes.png" alt="">
+            </div>
+            <div class="links">
+                <ul id="menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> <br/> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-users"></i> <br/> Nosotros</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> <br/> Contacto</a></li>
+                </ul>
+        
+                <ul id="menu-mobile">
+                    <li><button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button></li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </div>   
+    </header>
+
+   <main>
+    
+    <h1>Nuestros productos</h1>
+    <br>
+    <section class="productos">
+        <div class="container-productos">
+            <div class="item-producto">
+                <img src="img/brotes2.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, vel.</p>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/brotes6.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, vel.</p>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/brotes3.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, provident.</p>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/brotes5.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/brotes7.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/brotes8.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat alias.</p>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/brotes14.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="item-producto">
+                <img src="img/brotes15.png" alt="imagen">
+                <div>
+                    <h2>Nombre Producto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="">Comprar</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+    </section>
+   </main>
+   
+   <footer>
+    <h2>Nuestras redes</h2>
+    <div class="footer-container">
+        
+        <div class="item-footer">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="item-footer">
+            <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="item-footer">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        
+    </div>
+   </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>

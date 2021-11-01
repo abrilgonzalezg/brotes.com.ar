@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotes</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo_brotes.png" alt="">
+            </div>
+
+            <div class="links">
+                <ul id="menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> <br/> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-users"></i> <br/> Nosotros</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> <br/> Contacto</a></li>
+                </ul>
+                
+                <ul id="menu-mobile">
+                    <li><button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button></li>
+                </ul>
+            
+            </div>
+        </div>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Cotactate con nosotros</h1>
+        <section>
+            <div class="formulario">
+                <form action="">
+                    <div class="col-xs-6">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Escribe tu apellido" required>
+                    </div>
+                    
+                    <div class="col-xs-12 mt-15">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+                    <div class="col-xs-12 mt-15">
+                        <label for="consulta" class="form-label">Escriba su consulta:</label>
+                        <textarea class="form-control" id="consulta" rows="3"></textarea>
+                        <br>
+                    </div>
+                    
+                    <div class="enviar">
+                        <button type="button" class="btn btn-primary" onclick="validarFormulario()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <script>
+            function validarFormulario(){
+                nombre = document.getElementById("nombre");
+                apellido = document.getElementById("apellido");
+                email = document.getElementById("email");
+                consulta = document.getElementById("consulta");
+
+                if(!nombre.value){
+                    alert("Debe completar su nombre");
+                    return false;
+                }
+
+                if(!apellido.value){
+                    alert("Debe completar su apellido");
+                    return false;
+                }
+
+                if(!email.value){
+                    alert("Debe completar su mail");
+                    return false;
+                }
+                
+                if(!validateEmail(email.value)){
+                    alert("El mail ingresado no es valido");
+                    return false;
+                }
+
+                if(!consulta.value){
+                    alert("Debe completar su cosulta");
+                    return false;
+                }
+
+                alert("Su consulta ha sido enviada, le responderemos a la brevedad. Gracias por escribirnos.")
+            }
+
+            function validateEmail(email) {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+        </script>
+
+    </main>
+
+    <footer>
+        <h2>Nuestras redes</h2>
+        <div class="footer-container">
+            
+            <div class="item-footer">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="item-footer">
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="item-footer">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
